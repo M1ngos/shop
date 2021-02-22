@@ -7,7 +7,7 @@
 3. Rename or copy .env.example file to .env
 4. php artisan key:generate
 5. Set your database credentials in your .env file
-7. Import db file(database/e-shop.sql) into your database (mysql,sql)
+7. Import db file(database/*.sql) into your database (mysql,sql)
 8. npm install
 9. npm run watch
 10. run command on laravel:-  php artisan storage:link
