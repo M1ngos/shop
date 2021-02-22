@@ -5,7 +5,7 @@
     @include('backend.layouts.notification')
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-      <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+      <h1 class="h3 mb-0 text-gray-800">Painel de controle</h1>
     </div>
 
     <!-- Content Row -->
@@ -17,7 +17,7 @@
           <div class="card-body">
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Category</div>
+                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Categoria</div>
                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{\App\Models\Category::countActiveCategory()}}</div>
               </div>
               <div class="col-auto">
@@ -34,7 +34,7 @@
           <div class="card-body">
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Products</div>
+                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Produtos</div>
                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{\App\Models\Product::countActiveProduct()}}</div>
               </div>
               <div class="col-auto">
@@ -51,7 +51,7 @@
           <div class="card-body">
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Order</div>
+                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Pedidos</div>
                 <div class="row no-gutters align-items-center">
                   <div class="col-auto">
                     <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{\App\Models\Order::countActiveOrder()}}</div>
@@ -73,7 +73,7 @@
           <div class="card-body">
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Post</div>
+                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Postagens</div>
                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{\App\Models\Post::countActivePost()}}</div>
               </div>
               <div class="col-auto">
@@ -91,7 +91,7 @@
         <div class="card shadow mb-4">
           <!-- Card Header - Dropdown -->
           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-            <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Visão geral dos ganhos</h6>
             
           </div>
           <!-- Card Body -->
@@ -108,7 +108,7 @@
         <div class="card shadow mb-4">
           <!-- Card Header - Dropdown -->
           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-            <h6 class="m-0 font-weight-bold text-primary">Users</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Usuários</h6>
           </div>
           <!-- Card Body -->
           <div class="card-body" style="overflow:hidden">
