@@ -8,8 +8,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="{{('home')}}">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="javascript:void(0);">Wishlist</a></li>
+							<li><a href="{{('home')}}">Pagina inicial<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="javascript:void(0);">Lista de Desejos</a></li>
 						</ul>
 					</div>
 				</div>
@@ -27,10 +27,10 @@
 					<table class="table shopping-summery">
 						<thead>
 							<tr class="main-hading">
-								<th>PRODUCT</th>
-								<th>NAME</th>
-								<th class="text-center">TOTAL</th> 
-								<th class="text-center">ADD TO CART</th> 
+							<th> PRODUTO </th>
+							<th> NOME </th>
+							<th class = "text-center"> TOTAL </th>
+							<th class = "text-center"> ADICIONE AO CARRINHO </th> 
 								<th class="text-center"><i class="ti-trash remove-icon"></i></th>
 							</tr>
 						</thead>
@@ -47,14 +47,14 @@
 											<p class="product-des">{!!($wishlist['summary']) !!}</p>
 										</td>
 										<td class="total-amount" data-title="Total"><span>${{$wishlist['amount']}}</span></td>
-										<td><a href="{{route('add-to-cart',$wishlist->product['slug'])}}" class='btn text-white'>Add To Cart</a></td>
+										<td><a href="{{route('add-to-cart',$wishlist->product['slug'])}}" class='btn text-white'>Adicionar ao carrinho</a></td>
 										<td class="action" data-title="Remove"><a href="{{route('wishlist-delete',$wishlist->id)}}"><i class="ti-trash remove-icon"></i></a></td>
 									</tr>
 								@endforeach
 							@else 
 								<tr>
 									<td class="text-center">
-										There are no any wishlist available. <a href="{{route('product-grids')}}" style="color:blue;">Continue shopping</a>
+									Não há nenhuma lista de desejos disponível. <a href="{{route('product-grids')}}" style="color:blue;">Continue comprando</a>
 
 									</td>
 								</tr>
@@ -78,8 +78,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-rocket"></i>
-						<h4>Free shiping</h4>
-						<p>Orders over $100</p>
+						<h4> Envio grátis </h4>
+						<p> Pedidos acima de $ 100 </p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -87,8 +87,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-reload"></i>
-						<h4>Free Return</h4>
-						<p>Within 30 days returns</p>
+						<h4> Devolução grátis </h4>
+						<p> Devoluções em 30 dias </p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -96,8 +96,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-lock"></i>
-						<h4>Sucure Payment</h4>
-						<p>100% secure payment</p>
+						<h4> Pagamento com sucesso </h4>
+						<p> Pagamento 100% seguro </p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -105,8 +105,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-tag"></i>
-						<h4>Best Peice</h4>
-						<p>Guaranteed price</p>
+						<h4> Melhor Preço </h4>
+						<p> Preço garantido </p>
 					</div>
 					<!-- End Single Service -->
 				</div>

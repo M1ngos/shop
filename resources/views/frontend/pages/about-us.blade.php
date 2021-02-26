@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','E-SHOP || About Us')
+@section('title','Sobre nós')
 
 @section('main-content')
 
@@ -11,8 +11,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="blog-single.html">About Us</a></li>
+							<li><a href="index1.html">Painel inicial<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="blog-single.html">Sobre nós</a></li>
 						</ul>
 					</div>
 				</div>
@@ -30,11 +30,11 @@
 							@php
 								$settings=DB::table('settings')->get();
 							@endphp
-							<h3>Welcome To <span>Eshop</span></h3>
+							<h3>Bem-vindo ao <span>a loja</span></h3>
 							<p>@foreach($settings as $data) {{$data->description}} @endforeach</p>
 							<div class="button">
-								<a href="{{route('blog')}}" class="btn">Our Blog</a>
-								<a href="{{route('contact')}}" class="btn primary">Contact Us</a>
+								<a href="{{route('blog')}}" class="btn"> Nosso blog</a>
+								<a href="{{route('contact')}}" class="btn primary">Entre em contato conosco</a>
 							</div>
 						</div>
 					</div>
@@ -51,135 +51,6 @@
 	</section>
 	<!-- End About Us -->
 	
-	<!-- Start Team -->
-	{{-- <section id="team" class="team section">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="section-title">
-						<h2>Our Expert Team</h2>
-						<p>Business consulting excepteur sint occaecat cupidatat consulting non proident, sunt in culpa qui officia deserunt laborum market. </p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<!-- Single Team -->
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="single-team">
-						<!-- Image -->
-						<div class="image">
-							<img src="images/team/team1.jpg" alt="#">
-						</div>
-						<!-- End Image -->
-						<div class="info-head">
-							<!-- Info Box -->
-							<div class="info-box">
-								<h4 class="name"><a href="#">Dahlia Moore</a></h4>
-								<span class="designation">Senior Manager</span>
-							</div>
-							<!-- End Info Box -->
-							<!-- Social -->
-							<div class="social-links">
-								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-								</ul>
-							</div>
-							<!-- End Social -->
-						</div>
-					</div>
-				</div>	
-				<!-- End Single Team -->
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="single-team">
-						<!-- Image -->
-						<div class="image">
-							<img src="images/team/team2.jpg" alt="#">
-						</div>
-						<!-- End Image -->
-						<div class="info-head">
-							<!-- Info Box -->
-							<div class="info-box">
-								<h4 class="name"><a href="#">Jhone digo</a></h4>
-								<span class="designation">Markeitng</span>
-							</div>
-							<!-- End Info Box -->
-							<!-- Social -->
-							<div class="social-links">
-								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-								</ul>
-							</div>
-							<!-- End Social -->
-						</div>
-					</div>
-				</div>	
-				<!-- End Single Team -->
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="single-team">
-						<!-- Image -->
-						<div class="image">
-							<img src="images/team/team3.jpg" alt="#">
-						</div>
-						<!-- End Image -->
-						<div class="info-head">
-							<!-- Info Box -->
-							<div class="info-box">
-								<h4 class="name"><a href="#">Zara tingo</a></h4>
-								<span class="designation">Web Developer</span>
-							</div>
-							<!-- End Info Box -->
-							<!-- Social -->
-							<div class="social-links">
-								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-								</ul>
-							</div>
-							<!-- End Social -->
-						</div>
-					</div>
-				</div>	
-				<!-- End Single Team -->
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="single-team">
-						<!-- Image -->
-						<div class="image">
-							<img src="images/team/team4.jpg" alt="#">
-						</div>
-						<!-- End Image -->
-						<div class="info-head">
-							<!-- Info Box -->
-							<div class="info-box">
-								<h4 class="name"><a href="#">David Zone</a></h4>
-								<span class="designation">SEO Expert</span>
-							</div>
-							<!-- End Info Box -->
-							<!-- Social -->
-							<div class="social-links">
-								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-								</ul>
-							</div>
-							<!-- End Social -->
-						</div>
-					</div>
-				</div>	
-				<!-- End Single Team -->
-			</div>	
-		</div>
-	</section> --}}
-	<!--/ End Team Area -->
 	
 	<!-- Start Shop Services Area -->
 	<section class="shop-services section">
@@ -189,8 +60,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-rocket"></i>
-						<h4>Free shiping</h4>
-						<p>Orders over $100</p>
+						<h4> Envio grátis </h4>
+						<p> Pedidos acima de $ 100 </p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -198,8 +69,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-reload"></i>
-						<h4>Free Return</h4>
-						<p>Within 30 days returns</p>
+						<h4> Devolução grátis </h4>
+						<p> Devoluções em 30 dias </p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -207,8 +78,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-lock"></i>
-						<h4>Sucure Payment</h4>
-						<p>100% secure payment</p>
+						<h4> Pagamento com sucesso </h4>
+						<p> Pagamento 100% seguro </p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -216,8 +87,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-tag"></i>
-						<h4>Best Peice</h4>
-						<p>Guaranteed price</p>
+						<h4> Melhor Peice </h4>
+						<p> Preço garantido </p>
 					</div>
 					<!-- End Single Service -->
 				</div>
