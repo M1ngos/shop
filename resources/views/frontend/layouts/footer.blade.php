@@ -8,9 +8,9 @@
 					<div class="col-lg-5 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer about">
-							<div class="logo">
-								<a href="index.html"><img src="{{asset('backend/img/logo2.png')}}" alt="#"></a>
-							</div>
+							<!--<div class="logo">
+								<a href="index.html"><img src="{{asset('storage/photos/1/carpintaria_logo.jpg')}}" alt="#"></a>
+							</div>-->
 							@php
 								$settings=DB::table('settings')->get();
 							@endphp
